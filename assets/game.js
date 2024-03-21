@@ -59,8 +59,8 @@ const startBtn = document.getElementById("startButton");
 function startGame() {
     score = 0;
     countdown();
-    introEl.setAttribute("style", "display: none");
-    quizConEl.setAttribute("style", "display: block");
+    introEl.style.display = "none";
+    quizConEl.style.display = "flex";
     askAway();
 };
 
@@ -74,5 +74,4 @@ function askAway() {
 }
 
 // Add event listener that starts the game
-
 startBtn.addEventListener("click", startGame);
