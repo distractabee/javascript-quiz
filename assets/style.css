@@ -40,6 +40,23 @@
     background-color: var(--black);
   }
 
+  nav a {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--green);
+    border: solid 1px var(--green);
+    padding: var(--padding1);
+    border-radius: var(--border-radius);
+    transition: all 0.5s ease-in-out
+  }
+
+  nav a:hover {
+        box-shadow: inset 0px 0px 8px
+        rgba(51, 255, 0), 0 0 15px
+        rgba(51, 255, 0);       
+  }
+
   h1 {
     font-family: "VT323", monospace;
     font-weight: 400;
@@ -86,6 +103,10 @@
   #quizContainer {
     display: none;
     max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .quizButton {
