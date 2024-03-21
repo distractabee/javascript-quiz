@@ -10,6 +10,25 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <li id="highScore"><a href="./high-score.html">View High Scores</a></li>
+            <li id="timer"></li>
+        </ul>
+    </nav>
+
+    <div id="intro">    
+        <h1>JJ's JavaScript Quiz</h1>
+        <p>Welcome to my little quiz that will test your knowledge of JS basics! Your time is your score- and wrong answers lose you time, so choose carefully!</p>
+        <button id="startButton">Begin</button>
+    </div>
+    <div id="quizContainer">
+        <p class="questionText"></p>
+        <button class="quizButton" id="buttonA"></button>
+        <button class="quizButton" id="buttonB"></button>
+        <button class="quizButton" id="buttonC"></button>
+        <button class="quizButton" id="buttonD"></button>
+
+    </div>
 </body>
 </html>

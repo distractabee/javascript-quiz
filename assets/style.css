@@ -1,0 +1,106 @@
+/* .vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .courier-prime-regular-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .courier-prime-bold-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+  } */
+  
+  :root {
+    --black: #000;
+    --green: #33FF33;
+    --padding1: calc(1rem * .5);
+    --padding2: 1rem;
+    --border-radius: .4rem;
+  }
+
+  * {
+    background-color: var(--black);
+  }
+
+  h1 {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--green);
+    font-size: 3rem;
+  }
+
+  p {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--green);
+    border: solid 1px var(--green);
+    border-radius: var(--border-radius);
+    padding: var(--padding2);
+    margin: var(--padding1);
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #startButton {
+    text-align: center;
+    background-color: var(--green);
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    border-radius: var(--border-radius);
+    padding: var(--padding1);
+  }
+
+  #startButton:hover {
+    color: var(--green);
+    background-color: var(--black);
+    border: solid 1px var(--green);
+  }
+
+  #quizContainer {
+    display: none;
+    max-width: 50rem;
+  }
+
+  .quizButton {
+    text-align: center;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--green);
+    border: solid 1px var(--green);
+    border-radius: var(--border-radius);
+    padding: var(--padding2);
+    margin: var(--padding1);
+  }
+
+  .quizButton:hover {
+    color: var(--black);
+    background-color: var(--green);
+  }
